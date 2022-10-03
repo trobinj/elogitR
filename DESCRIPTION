@@ -1,0 +1,18 @@
+Package: elogitR
+Type: Package
+Title: Ordered Logit Models for Ordered Response Categories
+Version: 1.0
+Date: 2022-07-26
+Author: Timothy R. Johnson
+Maintainer: Timothy R. Johnson <trobinj@gmail.com>
+Description: Ordered logit models for ordered response categories.
+License: GPLv3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.9), 
+  RcppArmadillo (>= 0.11.2.0.0),
+  roptim (>= 0.1.5), 
+  doParallel (>= 1.0.17), 
+  foreach (>= 1.5.2), 
+  iterators (>= 1.0.14)
+LinkingTo: Rcpp, RcppArmadillo, roptim
