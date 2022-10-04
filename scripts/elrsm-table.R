@@ -2,7 +2,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 d <- read.csv("elrsm-simdata.csv")
 K <- 5
@@ -48,4 +48,4 @@ textable <- function(x, file, midrule) {
    }
 }
 
-textable(d, "../manuscript/elrsm-table.tex", midrule = c(7,14))
+textable(d, "elrsm-table.tex", midrule = c(7,14))

@@ -1,1 +1,1 @@
-this is a readme file
+R package supporting the paper "A Note on the Use of Rank Ordered Logit Models for Ordered Response Categories". Install using `devtools::install_github("trobinj/trtools")`, assuming you have the **devtools** package installed. 

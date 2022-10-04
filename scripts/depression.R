@@ -7,7 +7,7 @@ library(numDeriv)
 library(dplyr)
 library(tikzDevice)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 # Items:
 # 1. Bothered by things not generally bothered by
@@ -95,7 +95,7 @@ textable <- function(x, file) {
       col.names = FALSE, quote = FALSE, sep = " & ", na = "", eol = eolstring)
   }
 }
-textable(tbl, "../manuscript/depression-table.tex")
+textable(tbl, "../../manuscript/depression-table.tex")
 
 n <- 1000
 m <- 5
@@ -243,7 +243,7 @@ d2 <- data.frame(inf = c(inf0, inf1, inf2, infK),
 
 prnt <- TRUE
 
-if (prnt) tikz("../manuscript/depression-information.tex", width = 6, height = 4)
+if (prnt) tikz("depression-information.tex", width = 6, height = 4)
 
 p <- ggplot(d2, aes(x = zeta, y = inf, group = K)) + theme_classic() +
   geom_line() + scale_x_continuous(breaks = -3:3) + 

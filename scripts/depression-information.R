@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(tikzDevice)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 n <- 1000
 m <- 5
@@ -138,7 +138,7 @@ d2 <- data.frame(inf = c(inf0, inf1, inf2, infK),
 
 prnt <- FALSE
 
-if (prnt) tikz("../manuscript/depressionscale-information.tex", width = 6, height = 4)
+if (prnt) tikz("depressionscale-information.tex", width = 6, height = 4)
 
 p <- ggplot(d2, aes(x = zeta, y = inf, group = K)) + theme_classic() +
   geom_line() + scale_x_continuous(breaks = -3:3) + 

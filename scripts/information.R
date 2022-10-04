@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(tikzDevice)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 n <- 1000
 
@@ -108,7 +108,7 @@ d2 <- data.frame(inf = c(inf0, inf1, inf2, inf3, infK),
 
 prnt <- TRUE
 
-if (prnt) tikz("../manuscript/information.tex", width = 6, height = 4)
+if (prnt) tikz("information.tex", width = 6, height = 4)
 
 p <- ggplot(d2, aes(x = zeta, y = inf, group = K)) + theme_classic() +
   geom_line() + scale_x_continuous(breaks = -3:3) + 

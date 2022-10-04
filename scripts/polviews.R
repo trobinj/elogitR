@@ -5,6 +5,8 @@ library(gssr)
 library(haven) # use as_factor to convert to factor
 library(forcats)
 
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
+
 if (!exists("gss_all")) data(gss_all)
 if (!exists("gss_doc")) data(gss_doc)
 
@@ -109,4 +111,4 @@ textable <- function(x, file) {
       col.names = FALSE, quote = FALSE, sep = " & ", na = "", eol = eolstring)
   }
 }
-textable(tbl, "../manuscript/polviews-table.tex")
+textable(tbl, "polviews-table.tex")

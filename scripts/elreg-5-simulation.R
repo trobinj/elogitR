@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyr)
 library(progress)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 K <- 5
 n <- 200

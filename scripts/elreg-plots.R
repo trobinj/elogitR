@@ -2,7 +2,7 @@ library(ggplot2)
 library(dplyr)
 library(tikzDevice)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 K <- 3
 n <- 200
@@ -54,7 +54,7 @@ d <- rbind(d1, d2, d3, d4) %>%
 
 prnt <- FALSE
 
-if (prnt) tikz("../manuscript/elreg-plot.tex", width = 6, height = 3)
+if (prnt) tikz("elreg-plot.tex", width = 6, height = 3)
 
 p <- ggplot(d, aes(x = x, y = p)) + theme_minimal() + geom_line(aes(group = k)) + 
    facet_wrap(~ K, ncol = 4) + labs(x = "$x$", y = "Probability") + ylim(0,1) + 

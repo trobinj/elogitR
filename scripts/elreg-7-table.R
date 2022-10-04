@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 
-setwd(this.path::this.dir())
+setwd("/home/trjohns/Dropbox/Research/elogit/manuscript")
 
 d <- read.csv("elreg-7-simdata.csv")
 
@@ -46,4 +46,4 @@ textable <- function(x, file, midrule) {
    }
 }
 
-textable(d, "../manuscript/elreg-7-table.tex", midrule = c(12,24))
+textable(d, "elreg-7-table.tex", midrule = c(12,24))
